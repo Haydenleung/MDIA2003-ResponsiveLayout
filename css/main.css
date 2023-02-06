@@ -1,31 +1,39 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+/* ==========================================================================
+    [Table of contents]
 
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+    1. BASE
+        1.1 Page Rendering Defaults
+        1.2 Core Styling
+        1.3 Typography
+    2. LAYOUT
+        2.1 Core Layout
+        2.2 Small only
+        2.3 medium and up
+        2.4 Medium only
+        2.5 large screens and up
+        2.6 Large only
+    3. MODULES
+    4. STATES
+    5. THEME
+    6. UTILITY classes
+    7. PRINT
+
+    refer to http://smacss.com/
+    ========================================================================== */
+
 
 /* ==========================================================================
-   Base styles: opinionated defaults
+   BASE
    ========================================================================== */
+
+
+/* 1.1 Page Rendering Defaults */
 
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -37,10 +45,6 @@ html {
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
 hr {
   display: block;
   height: 1px;
@@ -49,12 +53,6 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 
 audio,
 canvas,
@@ -65,49 +63,781 @@ video {
   vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
 textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+
+/* 1.2 Core Styling */
+
+
+/* refer to https://css-tricks.com/box-sizing/ */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+
+/* 1.3 Typgraphy */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+
+h1{
+  font-size: 24pt;
+}
+
+h2{
+  font-size: 16pt;
+}
+
+h4{
+  font-size: 9pt;
+}
+
+h5{
+  font-size: 7pt;
+}
+
+p {
+  font-family: Ubuntu, sans-serif;
+  font-size: 6.5pt;
+}
+
+.intro--text{
+  font-weight: 400;
+}
+
+.intro--emphasis{
+  color: rgb(30, 175, 222);
+}
+
+.text--color{
+  color: white;
+}
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+ 2. LAYOUT
+ ========================================================================== */
+
+
+/* Helper to display empty layout containers*/
+
+div,
+main,
+section,
+footer,
+header {
+  /* outline: 1px solid #ccc; */
+  min-height: 1rem;
+  padding: 0.8rem;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 2.1 Core layout */
+
+.row {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.col {
+  position: relative;
+  background-color: rgb(242, 230, 177);
+}
+
+.blog__body{
+  margin: 0;
+}
+
+.page{
+  width: 55rem;
+}
+
+/* Header */
+
+.page__head{
+  display: grid;
+  grid-template-columns: 3.5fr 1fr 1fr 1fr 1fr 1fr;
+  min-height: 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.head__tag--logo{
+  display: grid;
+  flex-direction: row;
+}
+
+.company__logo{
+  width: 12rem;
+  object-fit: contain;
+}
+
+.head__tag{
+  display: flex;
+  flex-direction: column;
+  min-width: 6rem;
+  justify-content: flex-end;
+}
+
+.head__tag--home{
+  background-color: rgba(37, 195, 137);
+}
+
+.head__tag--pages{
+  background-color: rgba(255, 185, 1);
+}
+
+.head__tag--blog{
+  background-color: rgba(222, 98, 98);
+}
+
+.head__tag--portfolio{
+  background-color: rgba(22, 145, 189);
+}
+
+.head__tag--homesecond{
+  background-color: rgba(22, 107, 162);
+}
+
+.tag__icon{
+  width: 2rem;
+  margin: auto;
+  padding: 0.3rem;
+  border-radius: 99rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tag__text{
+  color: white;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Slider */
+.slider{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(235, 235, 235);
+  min-height: 10rem;
+  width: 100%;
+  padding: 0;
+}
+
+.slider__img{
+  width: 70rem;
+}
+
+/* main - intro */
+.main__intro{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
+}
+
+/* main - Things That We Do */
+.main{
+  padding: 0;
+}
+
+.main__heading{
+  padding: 1.2rem;
+}
+
+.main__heading > h2{
+  font-weight: 400;
+}
+
+.main__heading > h5{
+  color:rgb(163, 163, 163);
+}
+
+.action__grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+  padding: 0;
+}
+
+.action__grid--category{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.category--icon{
+  width: 4.5rem;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid;
+}
+
+.icon--border-a{
+  border-color:rgb(254, 185, 2);
+}
+
+.icon--border-b{
+  border-color:rgb(37, 195, 137);
+}
+
+
+.icon--border-c{
+  border-color:rgb(237, 91, 94);
+}
+
+
+.icon--border-d{
+  border-color:rgb(31, 168, 212);
+}
+
+.category--flex{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.category--flex--title{
+  font-weight: 600;
+}
+
+.category--flex--text{
+  color: rgb(147, 147,147) ;
+  text-align: center;
+}
+
+/* main - What's Up Lately */
+.recent__grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+    "posta postb postc";
+  gap: 1rem;
+  padding: 0;
+}
+
+.recent__grid--post{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-a{
+  grid-area: posta;
+}
+
+.post-b{
+  grid-area: postb;
+}
+
+.post-c{
+  grid-area: postc;
+}
+
+.post-d{
+  grid-area: postd;
+}
+
+.post--desc{
+  display: grid;
+  grid-template-columns: 5fr 1.5fr;
+  padding: 0;
+  background-color: rgba(25, 178,222, 1.0);
+}
+
+.post--desc > *{
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.post--desc--text > *{
+  text-align: left;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.post--desc--icon{
+  width: 2rem;
+  padding: 0.3rem;
+  margin: auto 0.5rem 0.5rem auto;
+  background-color: rgb(21, 150, 189);
+}
+
+.post--date{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  position: absolute;
+  background-color: rgb(216,96, 95);
+  width: 3em;
+  height: 2.5em;
+  padding: 0;
+}
+
+.post--date > *{
+  color: white;
+}
+
+/* main - Separator */
+.main__separator{
+  display: grid;
+  grid-template-columns: 2.5fr 6fr;
+  place-content: center;
+  height: 4rem;
+}
+
+.main__separator--first{
+  border-color: rgb(28, 177,219);
+  border-width: 0.2rem;
+}
+
+.main__separator--second{
+  border-color: rgb(234, 234, 234);
+}
+
+/* main - Our Latest Projects */
+.project__grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 0;
+}
+
+.project__grid--post{
+  position: relative;
+  padding: 0;
+}
+
+/* main - Thingsofabove */
+.thing__grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  padding: 0;
+}
+
+.thing__content--left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.content--expand{
+  padding: 0;
+  outline: 1px solid #ccc; 
+}
+
+.content--bar{
+  display: grid;
+  grid-template-columns: 2fr auto;
+  padding: 0;
+  outline: 1px solid #ccc; 
+}
+
+.bar--color{
+  background-color: rgba(25, 178,222, 1.0);
+}
+
+.content--bar--text{
+  text-align: left;
+  margin: auto 1rem auto;
+  font-weight: 400;
+}
+
+.content--bar--plus{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 2.5rem;
+  aspect-ratio: 1/1;
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: 1px solid #ccc; 
+}
+
+.content--bar--plus > h2{
+  font-weight: 400;
+}
+
+.content--expand--body{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 1.5rem;
+  background-color: rgb(248, 248,248);
+}
+
+.content--box--icon{
+  padding: 0.5rem;
+  background-color: rgb(37, 195, 137);
+}
+
+.content--box--text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 0 0 1rem;
+}
+
+.content--box--text--title{
+  font-weight: 400;
+}
+
+.content--box--text--subtitle{
+  text-align: left;
+  line-height: 200%;
+  color: rgb(147, 147,147)
+}
+
+/* main - Tab */
+.thing__content--right{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab--box{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0;
+  min-height: 2.5rem;
+}
+
+.tab--color{
+  background-color: rgb(248, 248,248);
+  color: rgb(147, 147,147);
+}
+
+.tab--box--tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 0;
+}
+
+.tab--box--tab > h4{
+  font-weight: 400;
+}
+
+.tab--select{
+  border-bottom: 0;
+}
+
+.tab--empty{
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.content--right--box{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-top: 0;
+}
+
+.right__content{
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  padding: 0;
+  padding-left: 1rem;
+  align-items: center;
+  justify-items: stretch;
+}
+
+.content--right--text{
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  vertical-align: middle;
+  line-height: 200%;
+  color: rgb(147, 147,147)
+}
+
+.content--right--icon{
+  place-items: center;
+  padding: 0.6rem;
+}
+
+.icon--color-a{
+  background-color: rgb(221, 96, 100);
+}
+
+.icon--color-b{
+  background-color: rgb(37, 195, 137);
+}
+
+.icon--color-c{
+  background-color:rgb(255, 185, 1);
+}
+
+.icon--color-d{
+  background-color: rgb(133, 44, 154);
+}
+
+/* main - Logo */
+.main__partner{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding:2rem 0 2rem 0;
+  column-gap: 1.5rem;
+}
+
+.partner{
+  max-height: 5rem;
+  background-color: rgb(246, 246,246);
+  display: flex;
+  place-items: center;
+}
+
+.partner--img{
+  max-height: 5rem;
+  object-fit: contain;
+}
+
+/* Footer */
+
+.page_footer{
+  background-color: rgb(22, 36,47);
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* 2.2 Small only */
+
+@media screen and (max-width: 39.9375em) {
+  h1{
+    font-size: 16pt;
+  }
+  .page{
+    width: 20rem;
+  }
+  .page__head{
+    min-height: 1rem;
+  }
+  .company__logo{
+    width: 7rem;
+  }
+  .slider{
+    display: none;
+  }
+  .main__intro{
+    min-height: 6rem;
+  }
+  .main__thing{
+    display: none;
+  }
+  .main__partner{
+    display: none;
+  }
+  .action__grid{
+    grid-template-columns: 1fr;
+  }
+  .recent__grid{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "posta"
+    "postb"
+    "postc"
+    "postd";
+  }
+  .project__grid{
+    grid-template-columns: 1fr;
+  }
+  .tag--hide{
+    display: none;
+  }
+  .action__grid--category{
+    flex-direction: row;
+    gap: 0.5rem;
+
+    align-items: flex-start;
+  }
+  .category--icon{
+    width: 3rem;
+  }
+  .category--flex{
+    align-items: flex-start;
+  }
+  .category--flex--text{
+    text-align: left;
+    margin: 0;
+  }
+}
+
+
+/* 2.3 medium and up */
+
+@media screen and (min-width: 40em) {
+  .post--desc-hide{
+    display: none;
+  }  
+  .post--desc-full{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 178,222, 0.90);
+  }
+  .recent--post--hide{
+    display: none;
+  }
+}
+
+
+/* 2.4 Medium only */
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  h1{
+    font-size: 19pt;
+  }
+  .page{
+    width: 40rem;
+  }
+  .company__logo{
+    align-self: flex-end;
+  }
+  .slider__img{
+    max-width: 50rem;
+  }
+  .action__grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  .recent__grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "posta posta"
+    "postb postc";
+  }
+  .post-a{
+    flex-direction: row;
+  }
+  .desc-tablet{
+    width: 110%;
+  }
+  .project__grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  .thing__grid{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .content--expand--body{
+    grid-template-columns: 1fr 9fr;
+  }
+  .right__content{
+    grid-template-columns: 1fr 16fr;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+}
+
+
+/* 2.5 large screens and up 2.6 Large only */
+
+@media screen and (min-width: 64em) {
+
+  
+  /* .l-col-2 {
+      grid-template-columns: 1fr 1fr;
+  }
+  .l-col-3 {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .l-col-4 {
+      grid-template-columns: repeat(4, 1fr);
+  }
+  .l-col-5 {
+      grid-template-columns: repeat(5, 1fr);
+  }
+  .l-col-6 {
+      grid-template-columns: repeat(6, 1fr);
+  }
+  .l-row-span {
+      grid-column-start: 1;
+      grid-column-end: -1;
+  }
+  .l-hide {
+      display: none;
+  } */
+}
+
+
+/* ==========================================================================
+ 2. MODULES
+ ========================================================================== */
+
+
+/* ==========================================================================
+ 2. STATES
+ ========================================================================== */
+
+
+/* ==========================================================================
+ 2. THEME
+ ========================================================================== */
+
+
+/* ==========================================================================
+ 6. UTILITY classes
+ ========================================================================== */
+
 
 /*
- * Hide visually and from screen readers
- */
+* Hide visually and from screen readers
+*/
 
 .hidden,
 [hidden] {
   display: none !important;
 }
 
+
 /*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
 
 .sr-only {
   border: 0;
@@ -122,11 +852,12 @@ textarea {
   /* 1 */
 }
 
+
 /*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
@@ -139,25 +870,27 @@ textarea {
   width: auto;
 }
 
+
 /*
- * Hide visually and from screen readers, but maintain layout
- */
+* Hide visually and from screen readers, but maintain layout
+*/
 
 .invisible {
   visibility: hidden;
 }
 
+
 /*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
 
 .clearfix::before,
 .clearfix::after {
@@ -169,95 +902,75 @@ textarea {
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
+
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+ 7. PRINT  styles.
+ Inlined to avoid the additional HTTP request:
+ https://www.phpied.com/delay-loading-your-print-css/
+ ========================================================================== */
 
 @media print {
   *,
   *::before,
   *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
   }
-
   a,
   a:visited {
-    text-decoration: underline;
+      text-decoration: underline;
   }
-
   a[href]::after {
-    content: " (" attr(href) ")";
+      content: " (" attr(href) ")";
   }
-
   abbr[title]::after {
-    content: " (" attr(title) ")";
+      content: " (" attr(title) ")";
   }
-
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
+ * Don't show links that are fragment identifiers,
+ * or use the `javascript:` pseudo protocol
+ */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
-    content: "";
+      content: "";
   }
-
   pre {
-    white-space: pre-wrap !important;
+      white-space: pre-wrap !important;
   }
-
   pre,
   blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
+      border: 1px solid #999;
+      page-break-inside: avoid;
   }
-
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
+ * Printing Tables:
+ * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+ */
   thead {
-    display: table-header-group;
+      display: table-header-group;
   }
-
   tr,
   img {
-    page-break-inside: avoid;
+      page-break-inside: avoid;
   }
-
   p,
   h2,
   h3 {
-    orphans: 3;
-    widows: 3;
+      orphans: 3;
+      widows: 3;
   }
-
   h2,
   h3 {
-    page-break-after: avoid;
+      page-break-after: avoid;
   }
 }
-

@@ -16,333 +16,370 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="blog__body">
 
   <!-- Add your site or application content here -->
   <header class="page page__head">
     <div class="head__tag head__tag--logo">
-      <img class="companylogo" src="" alt="">
+      <img class="company__logo" src="img/logo.webp" alt="">
     </div>
-    <div class="head__tag head__tag--home">
-      <img class="tag__icon" src="" alt="">
-      <h4 class="tag__text"></h4>
+    <div class="head__tag head__tag--home tag--hide">
+      <img class="tag__icon" src="img/tab-home.webp" alt="">
+      <h4 class="tag__text">Home</h4>
     </div>
-    <div class="head__tag head__tag--pages">
-      <img class="tag__icon" src="" alt="">
-      <h4 class="tag__text"></h4>
+    <div class="head__tag head__tag--pages tag--hide">
+      <img class="tag__icon" src="img/tab-pages.webp" alt="">
+      <h4 class="tag__text">Pages</h4>
     </div>
-    <div class="head__tag head__tag--blog">
-      <img class="tag__icon" src="" alt="">
-      <h4 class="tag__text"></h4>
+    <div class="head__tag head__tag--blog tag--hide">
+      <img class="tag__icon" src="img/tab-blog.webp" alt="">
+      <h4 class="tag__text">Blog</h4>
     </div>
-    <div class="head__tag head__tag--portfolio">
-      <img class="tag__icon" src="" alt="">
-      <h4 class="tag__text"></h4>
+    <div class="head__tag head__tag--portfolio tag--hide">
+      <img class="tag__icon" src="img/tab-portfolio.webp" alt="">
+      <h4 class="tag__text">Portfolio</h4>
     </div>
-    <div class="head__tag head__tag--homesecond">
-      <img class="tag__icon" src="" alt="">
-      <h4 class="tag__text"></h4>
+    <div class="head__tag head__tag--homesecond tag--hide">
+      <img class="tag__icon" src="img/tab-homesecond.webp" alt="">
+      <h4 class="tag__text">Home</h4>
     </div>
   </header>
 
   <section class="slider">
-    <img class="slider__img" src="" alt="">
+    <img class="slider__img" src="img/slider.webp" alt="">
   </section>
 
   <main class="page page__main">
     <section class="main main__intro">
-      <h1 class="intro intro--text"><span class="intro--emphasis"></span></h1>
+      <h1 class="intro intro--text">Hey guys! This is the <span class="intro--emphasis">Metrolics</span> theme.<br>
+        It sports a responsive layout with a mobile layout.</h1>
     </section>
     <section class="main main__action">
       <div class="action main__heading">
-        <h2></h2>
-        <h5></h5>
+        <h2>Things That We Do</h2>
+        <h5>Ask us what we can do for you</h5>
       </div>
       <div class="action action__grid">
         <div class="action__grid--category">
-          <img class="category category--iconA" src="" alt="">
-          <h4 class="category category--title"></h4>
-          <p class="category category--text"></p>
+          <img class="category category--icon icon--border-a" src="img/action-web.webp" alt="">
+          <div class="category--flex">
+            <h4 class="category--flex--title">Web Solutions</h4>
+            <p class="category--flex--text">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials</p>
+          </div>
         </div>
         <div class="action__grid--category">
-          <img class="category category--iconB" src="" alt="">
-          <h4 class="category category--title"></h4>
-          <p class="category category--text"></p>
+          <img class="category category--icon icon--border-b" src="img/action-photography.webp" alt="">
+          <div class="category--flex">
+            <h4 class="category--flex--title">Photography</h4>
+            <p class="category--flex--text">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials</p>
+          </div>
         </div>
         <div class="action__grid--category">
-          <img class="category category--iconC" src="" alt="">
-          <h4 class="category category--title"></h4>
-          <p class="category category--text"></p>
+          <img class="category category--icon icon--border-c" src="img/action-webdeve.webp" alt="">
+          <div class="category--flex">
+            <h4 class="category--flex--title">Web Development</h4>
+            <p class="category--flex--text">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials</p>
+          </div>
         </div>
         <div class="action__grid--category">
-          <img class="category category--iconD" src="" alt="">
-          <h4 class="category category--title"></h4>
-          <p class="category category--text"></p>
+          <img class="category category--icon icon--border-d" src="img/action-webdesign.webp" alt="">
+          <div class="category--flex">
+            <h4 class="category--flex--title">Web Design</h4>
+            <p class="category--flex--text">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials</p>
+          </div>
         </div>
       </div>
     </section>
     <section class="main main__recent">
       <div class="recent main__heading">
-        <h2></h2>
-        <h5></h5>
+        <h2>What's Up Lately?</h2>
+        <h5>Read up on our latest work</h5>
       </div>
       <div class="recent recent__grid">
-        <div class="recent__grid--post recent--postA">
-          <img class="recent--post post--img" src="" alt="">
-          <div class="recent--post post--desc">
-            <div class="post--desc-text">
-              <h4></h4>
-              <h5></h5>
+        <div class="recent__grid--post post-a">
+          <div class="recent--post post--date">
+            <h4>29</h4>
+            <h5>Nov 2013</h5>
+          </div>
+          <img class="recent--post post--img " src="img/thumbnail.webp" alt="">
+          <div class="recent--post post--desc desc-tablet">
+            <div class="post--desc--text">
+              <h4>Sample Image Post</h4>
+              <h5>Photography</h5>
             </div>
-            <img class="post--desc--icon" src="" alt="">
+            <img class="post--desc--icon" src="img/recent-camera.webp" alt="">
           </div>
         </div>
-        <div class="recent__grid--post recent--postB">
-          <img class="recent--post post--img" src="" alt="">
+        <div class="recent__grid--post post-b">
+          <div class="recent--post post--date">
+            <h4>29</h4>
+            <h5>Nov 2013</h5>
+          </div>
+          <img class="recent--post post--img" src="img/thumbnail.webp" alt="">
           <div class="recent--post post--desc">
-            <div class="post--desc-text">
-              <h4></h4>
-              <h5></h5>
+            <div class="post--desc--text">
+              <h4>Sample Image Post</h4>
+              <h5>Photography</h5>
             </div>
-            <img class="post--desc--icon" src="" alt="">
+            <img class="post--desc--icon" src="img/recent-camera.webp" alt="">
           </div>
         </div>
-        <div class="recent__grid--post recent--postC">
-          <img class="recent--post post--img" src="" alt="">
+        <div class="recent__grid--post post-c">
+          <div class="recent--post post--date">
+            <h4>29</h4>
+            <h5>Nov 2013</h5>
+          </div>
+          <img class="recent--post post--img" src="img/thumbnail.webp" alt="">
           <div class="recent--post post--desc">
-            <div class="post--desc-text">
-              <h4></h4>
-              <h5></h5>
+            <div class="post--desc--text">
+              <h4>Sample Image Post</h4>
+              <h5>Photography</h5>
             </div>
-            <img class="post--desc--icon" src="" alt="">
+            <img class="post--desc--icon" src="img/recent-camera.webp" alt="">
           </div>
         </div>
-        <div class="recent__grid--post recent--postD">
-          <img class="recent--post post--img" src="" alt="">
+        <div class="recent__grid--post post-d recent--post--hide">
+          <div class="recent--post post--date">
+            <h4>29</h4>
+            <h5>Nov 2013</h5>
+          </div>
+          <img class="recent--post post--img" src="img/thumbnail.webp" alt="">
           <div class="recent--post post--desc">
-            <div class="post--desc-text">
-              <h4></h4>
-              <h5></h5>
+            <div class="post--desc--text">
+              <h4>Sample Image Post</h4>
+              <h5>Photography</h5>
             </div>
-            <img class="post--desc--icon" src="" alt="">
+            <img class="post--desc--icon" src="img/recent-camera.webp" alt="">
           </div>
         </div>
       </div>
     </section>
+    <section class="main main__separator"><hr class="main__separator--first"></hr><hr class="main__separator--second"></hr></section>
     <section class="main main__project">
       <div class="project main__heading">
-        <h2></h2>
-        <h5></h5>
+        <h2>Our Latest Projects</h2>
+        <h5>Client happy? We are happy.</h5>
       </div>
       <div class="project project__grid">
-        <div class="project__grid--post project--postA">
-          <img class="project--post post--img" src="" alt="">
-          <div class="project--post post--desc-full">
-            <div class="post--desc-text">
-              <h4></h4>
-              <h5></h5>
+        <div class="project__grid--post project--post">
+          <img class="project--post post--img" src="img/thumbnail.webp" alt="">
+          <div class="project--post post--desc post--desc-full">
+            <div class="post--desc--text">
+              <h4>Sample Image Post</h4>
+              <h5>Photography</h5>
             </div>
-            <img class="post--desc--icon" src="" alt="">
+            <img class="post--desc--icon" src="img/project-document.webp" alt="">
           </div>
         </div>
-        <div class="project__grid--post project--postB">
-          <img class="project--post post--img" src="" alt="">
-          <div class="project--post post--desc">
-            <div class="post--desc-text">
-              <h4></h4>
-              <h5></h5>
+        <div class="project__grid--post project--post">
+          <img class="project--post post--img" src="img/thumbnail.webp" alt="">
+          <div class="project--post post--desc post--desc-hide">
+            <div class="post--desc--text">
+              <h4>Sample Image Post</h4>
+              <h5>Photography</h5>
             </div>
-            <img class="post--desc--icon" src="" alt="">
+            <img class="post--desc--icon" src="img/project-document.webp" alt="">
           </div>
         </div>
-        <div class="project__grid--post project--postC">
-          <img class="project--post post--img" src="" alt="">
-          <div class="project--post post--desc">
-            <div class="post--desc-text">
-              <h4></h4>
-              <h5></h5>
+        <div class="project__grid--post project--post">
+          <img class="project--post post--img" src="img/thumbnail.webp" alt="">
+          <div class="project--post post--desc post--desc-hide">
+            <div class="post--desc--text">
+              <h4>Sample Image Post</h4>
+              <h5>Photography</h5>
             </div>
-            <img class="post--desc--icon" src="" alt="">
+            <img class="post--desc--icon" src="img/project-document.webp" alt="">
           </div>
         </div>
-        <div class="project__grid--post project--postD">
-          <img class="project--post post--img" src="" alt="">
-          <div class="project--post post--desc">
-            <div class="post--desc-text">
-              <h4></h4>
-              <h5></h5>
+        <div class="project__grid--post project--post">
+          <img class="project--post post--img" src="img/thumbnail.webp" alt="">
+          <div class="project--post post--desc post--desc-hide">
+            <div class="post--desc--text">
+              <h4>Sample Image Post</h4>
+              <h5>Photography</h5>
             </div>
-            <img class="post--desc--icon" src="" alt="">
+            <img class="post--desc--icon" src="img/project-document.webp" alt="">
           </div>
         </div>
-        <div class="project__grid--post project--postE">
-          <img class="project--post post--img" src="" alt="">
-          <div class="project--post post--desc">
-            <div class="post--desc-text">
-              <h4></h4>
-              <h5></h5>
+        <div class="project__grid--post project--post">
+          <img class="project--post post--img" src="img/thumbnail.webp" alt="">
+          <div class="project--post post--desc post--desc-hide">
+            <div class="post--desc--text">
+              <h4>Sample Image Post</h4>
+              <h5>Photography</h5>
             </div>
-            <img class="post--desc--icon" src="" alt="">
+            <img class="post--desc--icon" src="img/project-document.webp" alt="">
           </div>
         </div>
-        <div class="project__grid--post project--postF">
-          <img class="project--post post--img" src="" alt="">
-          <div class="project--post post--desc">
-            <div class="post--desc-text">
-              <h4></h4>
-              <h5></h5>
+        <div class="project__grid--post project--post">
+          <img class="project--post post--img" src="img/thumbnail.webp" alt="">
+          <div class="project--post post--desc post--desc-hide">
+            <div class="post--desc--text">
+              <h4>Sample Image Post</h4>
+              <h5>Photography</h5>
             </div>
-            <img class="post--desc--icon" src="" alt="">
+            <img class="post--desc--icon" src="img/project-document.webp" alt="">
           </div>
         </div>
       </div>
     </section>
     <section class="main main__thing">
       <div class="thing main__heading">
-        <h2></h2>
-        <h5></h5>
+        <h2>Thingsofabove</h2>
+        <h5>Misc stuff we could not put anyplace else</h5>
       </div>
       <section class="thing thing__grid">
         <div class="thing__content thing__content--left">
-          <div class="left__content left__content--bar">
-            <div class="content--bar">
-              <p class="content--bar--text text--color"></p>
-              <img src="" class="content--bar--icon icon--color" alt="">
+          <div class="left__content content--expand">
+            <div class="content--bar bar--color">
+              <h4 class="content--bar--text text--color">Sample Accordion Menu</h4>
+              <span class="content--bar--plus">
+                <h2 class="text--color">+</h2>
+              </span>
             </div>
-          </div>
-          <div class="left__content left--content--box">
-            <div class="content--box--icon"></div>
-            <div class="content--box--text">
-              <p class="content--box--text--title"></p>
-              <p class="content--box--text--subtitle"></p>
+            <div class="content--expand--body">
+              <img class="content--box--icon" src="img/accordion.webp"></img>
+              <div class="content--box--text">
+                <h4 class="content--box--text--title">Web solution</h4>
+                <h5 class="content--box--text--subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </h5>
+              </div>
             </div>
           </div>
           <div class="left__content content--bar">
-            <p class="content--bar--text"></p>
-            <img src="" class="content--bar--icon" alt="">
+            <h4 class="content--bar--text">Sample Accordion Menu 2</h4>
+            <span class="content--bar--plus">
+              <h2>+</h2>
+            </span>
           </div>
-          <div class="left__content content--barC">
-            <p class="content--bar--text"></p>
-            <img src="" class="content--bar--icon" alt="">
+          <div class="left__content content--bar">
+            <h4 class="content--bar--text">Sample Accordion Menu 3</h4>
+            <span class="content--bar--plus">
+              <h2>+</h2>
+            </span>
           </div>
         </div>
         <div class="thing__content thing__content--right">
-          <div class="content--right Tab--box">
-            <div class="Tab--box--TabA"></div>
-            <div class="Tab--box--TabB"></div>
-            <div class="Tab--box--TabC"></div>
+          <div class="content--right tab--box">
+            <div class="tab--box--tab tab--select"><h4>Tab 1</h4></div>
+            <div class="tab--box--tab tab--color"><h4>Tab 2</h4></div>
+            <div class="tab--box--tab tab--color"><h4>Tab 3</h4></div>
+            <div class="tab--box--tab tab--empty"></div>
+            <div class="tab--box--tab tab--empty"></div>
           </div>
           <div class="content--right content--right--box">
             <div class="right__content">
-              <img src="" class="content--right--icon icon--colorA" alt ="">
-              <p class="content--right--text"></p>
-              <div class="right__content">
-                <img src="" class="content--right--icon icon--colorB" alt ="">
-                <p class="content--right--text"></p>
-              </div>
-              <div class="right__content">
-                <img src="" class="content--right--icon icon--colorC" alt ="">
-                <p class="content--right--text"></p>
-              </div>
-              <div class="right__content">
-                <img src="" class="content--right--icon icon--colorD" alt ="">
-                <p class="content--right--text"></p>
-              </div>
+              <img src="img/placeholder.svg" class="content--right--icon icon--color-a" alt ="">
+              <p class="content--right--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+            </div>
+            <div class="right__content">
+              <img src="img/things-leaf.webp" class="content--right--icon icon--color-b" alt ="">
+              <p class="content--right--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+            </div>
+            <div class="right__content">
+              <img src="img/things-pc.webp" class="content--right--icon icon--color-c" alt ="">
+              <p class="content--right--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+            </div>
+            <div class="right__content">
+              <img src="img/things-people.webp" class="content--right--icon icon--color-d" alt ="">
+              <p class="content--right--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+            </div>
           </div>
         </div>
       </section>
     </section>
     <section class="main main__partner">
       <div class="partner">
-        <img class="partner--img" src="" alt="">
+        <img class="partner--img" src="img/partner-a.webp" alt="">
       </div>
       <div class="partner">
-        <img class="partner--img" src="" alt="">
+        <img class="partner--img" src="img/partner-b.webp" alt="">
       </div>
       <div class="partner">
-        <img class="partner--img" src="" alt="">
+        <img class="partner--img" src="img/partner-c.webp" alt="">
       </div>
       <div class="partner">
-        <img class="partner--img" src="" alt="">
+        <img class="partner--img" src="img/partner-d.webp" alt="">
       </div>
       <div class="partner">
-        <img class="partner--img" src="" alt="">
+        <img class="partner--img" src="img/partner-e.webp" alt="">
       </div>
     </section>
   </main>
 
   <!-- Please work on the whole footer -->
-  <footer class="page page_footer">
-    <section class="footer footer__author">
-      <img class="author author--pic" src="" alt="">
-      <div class="author author--profile">
-        <p></p>
-      </div>
-    </section>
-    <section class="footer footer__misc">
-      <div class="misc misc--about">
-        <p class="misc--header"></p>
-        <div class="misc--line misc--line--colorA"></div>
-        <p class="about--text"></p>
-        <div class="about--social">
-          <img src="facebook.png" class="about__social--icon about__social--fb" alt="">
-          <img src="google.png" class="about__social--icon about__social__fb" alt="">
-          <img src="twitter.png" class="about__social--icon about__social__fb" alt="">
-          <img src="instagram.png" class="about__social--icon about__social__fb" alt="">
-          <img src="wifi.png" class="aabout__social--icon bout__social__fb" alt="">
+  <footer class="page_footer">
+      <div class="page">
+      <section class="footer footer__author">
+        <img class="author author--pic" src="" alt="">
+        <div class="author author--profile">
+          <p></p>
         </div>
-      </div>
-      <div class="misc misc--flickr">
-        <p class="misc--header"></p>
-        <div class="misc--line misc--line--colorB">
-        </div>
-        <div class="flickr__photo--grid">
-          <img src="minion1.png" class="flickr--photo" alt="">
-          <img src="minion2.png" class="flickr--photo" alt="">
-          <img src="minion3.png" class="flickr--photo" alt="">
-          <img src="minion4.png" class="flickr--photo" alt="">
-          <img src="minion5.png" class="flickr--photo" alt="">
-          <img src="minion5.png" class="flickr--photo" alt="">
-        </div>
-      </div>
-      <div class="misc misc--tweets">
-        <p class="misc--header"></p>
-        <div class="misc--line misc--line--colorC">
-        </div>
-        <div class="tweet__content">
-          <div class="tweet__content__box">
-            <img src="tweets.png" class="tweets--icon" alt="">
-            <p class="tweets--text"><span class="text--blue"></span></p>
-          </div>
-          <div class="tweet__content__box">
-            <img src="tweets.png" class="tweets--icon" alt="">
-            <p class="tweets--text"><span class="text--blue"></span></p>
+      </section>
+      <section class="footer footer__misc">
+        <div class="misc misc--about">
+          <p class="misc--header"></p>
+          <div class="misc--line misc--line--colorA"></div>
+          <p class="about--text"></p>
+          <div class="about--social">
+            <img src="facebook.png" class="about__social--icon about__social--fb" alt="">
+            <img src="google.png" class="about__social--icon about__social__fb" alt="">
+            <img src="twitter.png" class="about__social--icon about__social__fb" alt="">
+            <img src="instagram.png" class="about__social--icon about__social__fb" alt="">
+            <img src="wifi.png" class="aabout__social--icon bout__social__fb" alt="">
           </div>
         </div>
-      </div>
-      <div class="misc misc--news">
-        <p class="misc--header"></p>
-        <div class="misc--line misc--line--colorD"></div>
-          <p class="news__text"><p>
-          <div class="news__email">
-            <input type="text" class="news__email--input" id="" placeholder="Enter your email...">  
-            <button src="send.png" class="news__email--button" alt=""></button>
+        <div class="misc misc--flickr">
+          <p class="misc--header"></p>
+          <div class="misc--line misc--line--colorB">
+          </div>
+          <div class="flickr__photo--grid">
+            <img src="minion1.png" class="flickr--photo" alt="">
+            <img src="minion2.png" class="flickr--photo" alt="">
+            <img src="minion3.png" class="flickr--photo" alt="">
+            <img src="minion4.png" class="flickr--photo" alt="">
+            <img src="minion5.png" class="flickr--photo" alt="">
+            <img src="minion5.png" class="flickr--photo" alt="">
           </div>
         </div>
-    </section>
-    <footer class="footer footer--boxes">
-      <div class="boxes boxes--colorA"></div>
-      <div class="boxes boxes--colorB"></div>
-      <div class="boxes boxes--colorC"></div>
-      <div class="boxes boxes--colorD"></div>
-      <div class="boxes boxes--colorE"></div>
-    </footer>
+        <div class="misc misc--tweets">
+          <p class="misc--header"></p>
+          <div class="misc--line misc--line--colorC">
+          </div>
+          <div class="tweet__content">
+            <div class="tweet__content__box">
+              <img src="tweets.png" class="tweets--icon" alt="">
+              <p class="tweets--text"><span class="text--blue"></span></p>
+            </div>
+            <div class="tweet__content__box">
+              <img src="tweets.png" class="tweets--icon" alt="">
+              <p class="tweets--text"><span class="text--blue"></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="misc misc--news">
+          <p class="misc--header"></p>
+          <div class="misc--line misc--line--colorD"></div>
+            <p class="news__text"><p>
+            <div class="news__email">
+              <input type="text" class="news__email--input" id="" placeholder="Enter your email...">  
+              <button src="send.png" class="news__email--button" alt=""></button>
+            </div>
+          </div>
+      </section>
+      <footer class="footer footer--boxes">
+        <div class="boxes boxes--colorA"></div>
+        <div class="boxes boxes--colorB"></div>
+        <div class="boxes boxes--colorC"></div>
+        <div class="boxes boxes--colorD"></div>
+        <div class="boxes boxes--colorE"></div>
+      </footer>
+    </div>
   </footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
