@@ -1056,9 +1056,9 @@ body {
     grid-template-columns: 1fr 4fr;
   }
 
-  .footer__separator--second {
+  /* .footer__separator--second {
     width: 150%;
-  }
+  } */
 
   .misc--hidden {
     display: none;
@@ -1167,9 +1167,18 @@ body {
     padding: 1rem 0;
   }
 
-  .footer__separator--second {
+  /* .footer__separator--second {
     width: 150%;
+  } */
+
+  .slider__text {
+    grid-template-columns: 1fr 4fr;
   }
+
+  .slider__text--empty {
+    display: initial;
+  }
+
 }
 
 /* 2.5 large screens and up 2.6 Large only */
