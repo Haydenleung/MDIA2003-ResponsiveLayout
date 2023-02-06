@@ -664,14 +664,154 @@ body {
 
 /* Footer */
 
-.page_footer {
-  background-color: rgb(22, 36, 47);
+.page_footer{
+  background-color: rgb(22, 36,47);
   width: 100%;
   padding: 0;
   display: flex;
   justify-content: center;
 }
+.footer__author{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align:left;
+  float: left;
+  align-items:center;
+  
+  
+}
+.author--profile{
+  display: absolute;
+  color:#fff 
+}
+.author--pic{
+  width: 40px;
+  height:40px;
+  float: left;
+}
+.profile--name{
+  font-size: small;
+  justify-content: left;
+}
+.misc--line--colorA{
+  display: flex;
+  height: 4rem;
+}
+.line--A{
+  color: red;
+  width: 5rem;
 
+
+}
+.triangle-down{
+  color:red;
+	width: 10;
+	height: 10;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #555;
+}
+.footer__separator{
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  place-content: center;
+  height: 2rem;
+}
+.footer__separator--first{
+border-color: rgb(28, 177,219);
+border-width: 0.1rem;
+}
+.footer__separator--second{
+border-color: rgb(234, 234, 234);
+}
+.footer__misc{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.misc--about{
+  position: relative;
+  color: #fff;
+}
+.misc--header{
+  padding: 10px;
+  font-size: large;
+  justify-content: center;
+}
+.about--social{
+  display: flex;
+  flex-direction: row;
+  row-gap: 2px ;
+  align-items: center;
+}
+.misc--header{
+  color: #fff;
+  font-size: large;
+}
+.flickr__photo--grid{
+  display: grid;
+  grid-template-columns: auto auto auto ;
+}
+.tweet__content__box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tweets--text{
+  color: rgb(255, 255, 255);
+}
+.text--blue{
+  color: rgb(65, 65, 228);
+}
+.news__text{
+  color:white;
+}
+.news__email{
+  display: flex;
+  flex-direction: row;
+}
+.news__email--input{
+  background-color: red;
+}
+::placeholder{
+  color: white; 
+}
+.news__email--button{
+  background-color: yellow;
+  width: 2rem;
+  height: 2rem;
+}
+.footer--boxes{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  margin-left: 60%;
+}
+.boxes--colorA{
+  background-color: green;
+  width: 10rem;
+  height: 2rem;
+}
+.boxes--colorB{
+  background-color: yellow;
+  width: 10rem;
+  height: 2rem;
+}
+.boxes--colorC{
+  background-color: red;
+  width: 10rem;
+  height: 2rem;
+}
+.boxes--colorD{
+  background-color: cyan;
+  width: 10rem;
+  height: 2rem;
+}
+.boxes--colorE{
+  background-color: blue;
+  width: 10rem;
+  height: 2rem;
+}
 /* 2.2 Small only */
 
 @media screen and (max-width: 39.9375em) {
