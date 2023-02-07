@@ -51,6 +51,7 @@ hr {
 audio,
 canvas,
 iframe,
+i,
 img,
 svg,
 video {
@@ -108,7 +109,7 @@ h4 {
 }
 
 h5 {
-  font-size: 7pt;
+  font-size: 8pt;
 }
 
 p {
@@ -220,11 +221,11 @@ body {
 }
 
 .tag__icon {
-  width: 2rem;
   margin: auto;
-  padding: 0.3rem;
+  padding: 0.7rem;
   border-radius: 99rem;
   background-color: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
 .tag__text {
@@ -279,15 +280,15 @@ body {
   padding: 0.5rem 0.2rem;
 }
 
-.text__bar--A {
+.text__bar--a {
   background-color: rgba(22, 107, 162);
 }
 
-.text__bar--B {
+.text__bar--b {
   background-color: rgba(222, 98, 98);
 }
 
-.text__bar--C {
+.text__bar--c {
   background-color: rgba(255, 185, 1);
 }
 
@@ -332,9 +333,11 @@ body {
 
 .category--icon {
   width: 4.5rem;
+  aspect-ratio: 1/1;
   padding: 0.8rem;
   margin-bottom: 1rem;
   border: 1px solid;
+
 }
 
 .icon--border-a {
@@ -624,10 +627,12 @@ body {
 .content--right--icon {
   place-items: center;
   padding: 0.6rem;
+  color: white;
 }
 
 .icon--color-a {
   background-color: rgb(221, 96, 100);
+
 }
 
 .icon--color-b {
@@ -878,23 +883,23 @@ body {
   height: 1.5rem;
 }
 
-.boxes--colorA {
+.boxes--colora {
   background-color: rgb(37, 195, 137);
 }
 
-.boxes--colorB {
+.boxes--colorb {
   background-color: rgb(255, 185, 1);
 }
 
-.boxes--colorC {
+.boxes--colorc {
   background-color: rgb(222, 98, 98);
 }
 
-.boxes--colorD {
+.boxes--colord {
   background-color: rgb(22, 145, 189);
 }
 
-.boxes--colorE {
+.boxes--colore {
   background-color: rgb(22, 107, 162);
 }
 
@@ -919,35 +924,35 @@ body {
   margin-left: 1rem;
 }
 
-.line--colorA {
+.line--colora {
   border-color: rgb(37, 195, 137);
 }
 
-.triangle--colorA {
+.triangle--colora {
   border-color: rgb(37, 195, 137) transparent transparent transparent;
 }
 
-.line--colorB {
+.line--colorb {
   border-color: rgb(255, 185, 1);
 }
 
-.triangle--colorB {
+.triangle--colorb {
   border-color: rgb(255, 185, 1) transparent transparent transparent;
 }
 
-.line--colorC {
+.line--colorc {
   border-color: rgb(222, 98, 98);
 }
 
-.triangle--colorC {
+.triangle--colorc {
   border-color: rgb(222, 98, 98) transparent transparent transparent;
 }
 
-.line--colorD {
+.line--colord {
   border-color: rgb(22, 145, 189);
 }
 
-.triangle--colorD {
+.triangle--colord {
   border-color: rgb(22, 145, 189) transparent transparent transparent;
 }
 
@@ -1022,6 +1027,12 @@ body {
     aspect-ratio: 1/1;
     padding: 0.3rem;
     margin-top: 0.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu__icon {
+    color: white;
   }
 
   .action__grid--category {
